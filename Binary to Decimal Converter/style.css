@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	min-height: 100vh;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #8a2387; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to left,
+		#f27121,
+		#e94057,
+		#8a2387
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#f27121,
+		#e94057,
+		#8a2387
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	form {
+		flex-direction: row;
+	}
+}
+
+.content__label {
+	padding: 10px;
+	font-size: 1.6em;
+	text-align: center;
+}
+.content__input {
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin: 1em;
+}
+.content__button {
+	border-radius: 4px;
+	font-size: 1.2em;
+	color: white;
+	background: rgb(66, 184, 221);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	padding: 5px;
+}
