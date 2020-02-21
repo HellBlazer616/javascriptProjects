@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			} else {
 				if (label.innerText !== 'Enter Binary Number') {
 					label.innerText = 'Enter Binary Number';
-					console.dir(label.innerText === 'Enter Binary Number');
 				}
 			}
 		}, 300);
