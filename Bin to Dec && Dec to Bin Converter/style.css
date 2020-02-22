@@ -34,10 +34,31 @@ form {
 @media (min-width: 768px) {
 	form {
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 
-.content__label {
+.content__group1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 100%;
+}
+
+.content__group2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 100%;
+	margin-top: 3em;
+}
+
+.content__labelBinary {
+	padding: 10px;
+	font-size: 1.6em;
+	text-align: center;
+}
+.content__labelDecimal {
 	padding: 10px;
 	font-size: 1.6em;
 	text-align: center;
@@ -47,12 +68,29 @@ form {
 	font-size: 1.2em;
 	margin: 1em;
 }
+
+.content__output {
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin: 1em;
+	flex-basis: 50%;
+}
 .content__button {
 	border-radius: 4px;
-	font-size: 1.2em;
-	color: white;
-	background: rgb(66, 184, 221);
+	font-size: 1.5em;
+	color: rgb(66, 184, 221);
+	background: transparent;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	padding: 5px;
+	border: 2px solid rgb(66, 184, 221);
+}
+
+.content__button:hover {
+	background: rgb(66, 184, 221);
+	color: white;
+	transform: translateY(-0.1em);
+}
+.content__button:focus {
+	outline: none;
 }
