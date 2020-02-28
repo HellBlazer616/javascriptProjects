@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+	--success-color: #87ffc4;
+	--error-color: #f3482f;
+}
+
+body {
+	font-family: 'Open Sans';
+	background: #f5f0f0;
+}
+.wrapper {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	flex-basis: 85%;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	background: white;
+	border-radius: 5px;
+	margin: 0 20px;
+}
+small {
+	visibility: hidden;
+	color: var(--error-color);
+}
+.form-group.error small {
+	visibility: visible;
+}
+.form-group.error input {
+	border: 1px solid var(--error-color);
+}
+
+.form-group.valid small {
+	visibility: hidden;
+}
+.form-group.valid input {
+	border: 1px solid var(--success-color);
+}
+
+.main__tag {
+	text-align: center;
+	padding: 10px;
+	margin: 2rem 0;
+}
+
+.btn-primary {
+	width: 100%;
+	margin: 2rem 0;
+}
